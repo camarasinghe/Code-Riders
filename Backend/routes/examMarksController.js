@@ -10,7 +10,8 @@ router.post('/', (req, res) => {
         course: req.body.course,
         fullname: req.body.fullname,
         username: req.body.username,
-        marks: req.body.marks
+        marks: req.body.marks,
+        date: req.body.date
     });
     marks.save((err, doc) => {
         if (!err) { res.send(doc); }
